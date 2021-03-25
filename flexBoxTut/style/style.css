@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.mainNav{
+    list-style: none;
+    width: 100vw;
+    margin: 0 auto;
+    height: 200px;
+    border: 1px solid;
+
+    /* To activate flexbox */
+    display: flex;
+
+    /* To control the direction of flow */
+    flex-direction: row;
+
+    /* How content is justified */
+    justify-content: space-evenly;
+
+    /* Align items top, bottom, center */
+    align-items: center;
+
+
+    /* Allows flexed items to wrap */
+    flex-wrap: wrap;
+
+    /* Once wrap is enabled, this will allow you to control what happens when the content wraps */
+    align-content: center;
+
+    /* flex-flow combines flex-direction and wrap to allow for a single, short-hand notation */
+    /* flex-flow: row wrap; */
+
+
+}
+
+/* -------------------------------------------- */
+/* Flexbox on the Child Elements */
+/* -------------------------------------------- */
+
+/* You chan change the order in which flexed items appear by applying the "order" param to the child elements. The higher the number in the order, the further to the right side of the screen it will appear */
+
+#child1{
+    order: 1;
+}
+
+#child2{
+    order: 2;
+}
+
+
+/* -------------------------------------------- */
+/* The Flex Parameter */
+/* -------------------------------------------- */
+
+/* The "Flex" parameter allows you to control the amount of space an element takes up. The larger the number, the more space it will occupy. Box1 in the example below, takes up twice as much space as the others */
+
+#colorbox{
+    margin-top: 40px;
+    display: flex;
+    border: 1px solid;
+}
+
+#box1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    flex: 2;
+}
+
+#box2{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    flex: 1;
+}
+
+#box3{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    flex: 1;
+}
