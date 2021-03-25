@@ -1,0 +1,43 @@
+h1,
+h2{
+    color: red;
+}
+
+h1{
+    font-size: 55px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+
+
+
+
+/* Media Queries */
+
+@media (max-width: 500px){
+
+   h1,
+   h2 {
+       color: blue;
+   }
+}
+
+/* When you write the above, we are creating a default media query that encompasses: screen, print, and speech. If you want to target a specific device, you can further specify it in another media query*/
+
+
+
+
+/* You can also create MQ based on if the device is in landscape more -- i.e. the screen is wider than it is tall...See below. You can also combine MQs as below.
+
+Note: if you wanted to use "or" instead of "and" just replace the "and" keyword with a comma "," */
+
+@media (orientation: landscape) and (max-width: 500px) {
+
+    h1{
+        color: green;
+    }
+
+}
