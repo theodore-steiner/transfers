@@ -1,0 +1,96 @@
+/*
+The Universal Selector (wildcard selector)
+    -Applies the CSS rules to all elementa
+    - *{}
+*/
+
+
+/*
+Type Selector
+    - select all of that type
+    div{} - will select all divs
+    li{} - will select all LIs
+*/
+
+
+/*
+Combining Selectors
+    div.red.green-text{} => only divs that have the class of red AND the class of green-text  will be selected (no spcaes)
+*/
+
+
+/*
+Target all the elements inside another element
+    ul li{} => target all the list items inside a UL
+    div b{} => target all b tags inside any div tag
+*/
+
+
+/*
+Target the first element inside another element
+    ul>li{}
+*/
+
+/*
+All Sibling Selector
+    li.red ~ li{} => get every list-item that comes after/is a sibling of of a list-item with a class of red.
+
+*/
+
+/*
+Single Sibling Selector
+    li.red + li{} => only get the next sibling. This will only check the next item in the html
+
+*/
+
+
+
+/*-----------------------------------------------
+Pseudo Classes
+------------------------------------------------*/
+
+/*
+Hover
+    li:hover{background:red;}
+    When you hover over a li turn the BG red
+*/
+
+
+/*
+Focus
+    li:focus{background:red;}
+    For button and form inputs or spaces a user can click to input data
+*/
+
+
+/*
+:first-child, :last-child, :nth-child(), :only-child
+    li:first-child{background:red;}
+    Turns the background of the first li child-item red
+*/
+
+
+/*
+:first-of-type, :last-of-type, :nth-of-type(), :only-of-type
+    span:first-of-type{}
+    Finds the first of the specificed type
+*/
+
+
+/*
+Not
+    li:not(.green-text){}
+    Select any element that is not a list item with a class of green-text
+*/
+
+
+/*-----------------------------------------------
+Pseudo Element
+------------------------------------------------*/
+
+/*
+::before, ::after
+    div.rec::before{}
+*/
+
+
